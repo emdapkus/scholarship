@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Finding your next dream city!</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.30.0.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./interactive_tool.html" aria-current="page"> 
+<span class="menu-text">Interactive Tool</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Finding your next dream city!</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The interactive graph below empowers you to prioritize what factors are most important to you on a scale from 0-10, 10 being more important. It then generates a weighted score for each metropolitan area, with higher scores indicating a better match to your preferences. All values that contribute to the weighted score and rank are normalized from 0-1, ensuring that features with larger raw values don’t disproportionately influence the result. Values where lower is better, such as unemployment and crime rates, &nbsp;are subtracted from 1 before being calculated in the weighted sum score. Hover over each area to reveal the region’s name, rank, and weighted sum based on your preferences!</p>
+<p>The bigger the circle, the better the city is for you!</p>
+<p><strong>So what are you waiting for? Find your next adventure now!</strong></p>
+<div>
+<blockquote class="blockquote">
+<p><strong>How to use this viz</strong><br> Adjust the sliders to reflect your preferences. The graph will update in real-time to reflect your choices. Hover over each area to see the region’s name, rank, and weighted sum based on your preferences.<br> N.B. You can use the dropdown menu to color code the areas based on the actual values of any of the available features.</p>
+</blockquote>
+</div>
+<div id="1dd3a59e" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+
+        <iframe width="100%" height="650" src="http://127.0.0.1:8052/" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<hr>
+<section id="a-closer-look-at-each-metric" class="level3">
+<h3 class="anchored" data-anchor-id="a-closer-look-at-each-metric">A closer look at each metric<br></h3>
+<p>While the chart above may seem complex with its array of options and data, the straightforward dropdown menu below simplifies the process. It displays a chart with the actual metrics for each feature and sorts the regions from highest to lowest value. The ‘better’ value will only sometimes be on the left; most people don’t prefer higher unemployment or crime rates. This allows you to focus on what matters to you, feature by feature, in a user-friendly manner.</p>
+<div>
+<blockquote class="blockquote">
+<p><strong>How to use this viz</strong><br> Select a feature from the dropdown menu to see the actual values for each metropolitan area. The chart will sort the regions from highest to lowest value for the selected feature. <br> You can also hover over each bar to see the actual value for the selected feature.</p>
+</blockquote>
+</div>
+<div id="636db039" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+
+        <iframe width="100%" height="650" src="http://127.0.0.1:8050/" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="economic-data" class="level2">
+<h2 class="anchored" data-anchor-id="economic-data">Economic data<br></h2>
+<p>Here are some economic indicators for each metropolitan region. The dropdown menu lets you choose what area to investigate. The four charts show the actual Median Personal Income, Median Rent, Median Home Sale Price, and Purchasing power for the area selected compared to the average of all regions. These features can be handy when comparing multiple job offers to ensure you will get more than what you earn after having to relocate. A ten percent raise that requires moving from Kansas City to San Fransico could mean a lower quality of life based on what you can afford in the two regions.</p>
+<div>
+<blockquote class="blockquote">
+<p><strong>How to use this viz</strong><br> Select a metropolitan area from the dropdown menu to see the actual values for each economic feature. The 4 charts will show the selected area’s Median Personal Income, Median Rent, Median Home Sale Price, and Purchasing Power compared to the average of all regions.<br> You can also hover over each bar to see the actual value for the selected feature.</p>
+</blockquote>
+</div>
+<div id="2235e5e8" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div>                            <div id="1fccd3f0-dcc4-491b-a977-5c134cd1df8a" class="plotly-graph-div" style="height:400px; width:1200px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("1fccd3f0-dcc4-491b-a977-5c134cd1df8a")) {                    Plotly.newPlot(                        "1fccd3f0-dcc4-491b-a977-5c134cd1df8a",                        [{"name":"Atlanta","visible":true,"x":["Atlanta","Metro average"],"xaxis":"x","y":[64107,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Atlanta","visible":true,"x":["Atlanta","Metro average"],"xaxis":"x2","y":[2113.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Atlanta","visible":true,"x":["Atlanta","Metro average"],"xaxis":"x3","y":[357000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Atlanta","visible":true,"x":["Atlanta","Metro average"],"xaxis":"x4","y":[100.89,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Austin","visible":false,"x":["Austin","Metro average"],"xaxis":"x","y":[75119,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Austin","visible":false,"x":["Austin","Metro average"],"xaxis":"x2","y":[1937.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Austin","visible":false,"x":["Austin","Metro average"],"xaxis":"x3","y":[451250.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Austin","visible":false,"x":["Austin","Metro average"],"xaxis":"x4","y":[99.96,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Baltimore","visible":false,"x":["Baltimore","Metro average"],"xaxis":"x","y":[71420,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Baltimore","visible":false,"x":["Baltimore","Metro average"],"xaxis":"x2","y":[1981.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Baltimore","visible":false,"x":["Baltimore","Metro average"],"xaxis":"x3","y":[325500.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Baltimore","visible":false,"x":["Baltimore","Metro average"],"xaxis":"x4","y":[95.23,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Boston","visible":false,"x":["Boston","Metro average"],"xaxis":"x","y":[94082,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Boston","visible":false,"x":["Boston","Metro average"],"xaxis":"x2","y":[3939.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Boston","visible":false,"x":["Boston","Metro average"],"xaxis":"x3","y":[600000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Boston","visible":false,"x":["Boston","Metro average"],"xaxis":"x4","y":[91.17,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Charlotte","visible":false,"x":["Charlotte","Metro average"],"xaxis":"x","y":[65156,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Charlotte","visible":false,"x":["Charlotte","Metro average"],"xaxis":"x2","y":[1923.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Charlotte","visible":false,"x":["Charlotte","Metro average"],"xaxis":"x3","y":[365000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Charlotte","visible":false,"x":["Charlotte","Metro average"],"xaxis":"x4","y":[103.52,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Chicago","visible":false,"x":["Chicago","Metro average"],"xaxis":"x","y":[72512,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Chicago","visible":false,"x":["Chicago","Metro average"],"xaxis":"x2","y":[2357.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Chicago","visible":false,"x":["Chicago","Metro average"],"xaxis":"x3","y":[290000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Chicago","visible":false,"x":["Chicago","Metro average"],"xaxis":"x4","y":[94.86,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Cincinnati","visible":false,"x":["Cincinnati","Metro average"],"xaxis":"x","y":[65253,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Cincinnati","visible":false,"x":["Cincinnati","Metro average"],"xaxis":"x2","y":[1646.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Cincinnati","visible":false,"x":["Cincinnati","Metro average"],"xaxis":"x3","y":[247000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Cincinnati","visible":false,"x":["Cincinnati","Metro average"],"xaxis":"x4","y":[106.0,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Cleveland","visible":false,"x":["Cleveland","Metro average"],"xaxis":"x","y":[62921,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Cleveland","visible":false,"x":["Cleveland","Metro average"],"xaxis":"x2","y":[1471.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Cleveland","visible":false,"x":["Cleveland","Metro average"],"xaxis":"x3","y":[179000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Cleveland","visible":false,"x":["Cleveland","Metro average"],"xaxis":"x4","y":[106.15,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Dallas-Fort Worth","visible":false,"x":["Dallas-Fort Worth","Metro average"],"xaxis":"x","y":[70493,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Dallas-Fort Worth","visible":false,"x":["Dallas-Fort Worth","Metro average"],"xaxis":"x2","y":[2180.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Dallas-Fort Worth","visible":false,"x":["Dallas-Fort Worth","Metro average"],"xaxis":"x3","y":[380000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Dallas-Fort Worth","visible":false,"x":["Dallas-Fort Worth","Metro average"],"xaxis":"x4","y":[96.29,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Denver","visible":false,"x":["Denver","Metro average"],"xaxis":"x","y":[84788,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Denver","visible":false,"x":["Denver","Metro average"],"xaxis":"x2","y":[2677.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Denver","visible":false,"x":["Denver","Metro average"],"xaxis":"x3","y":[556000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Denver","visible":false,"x":["Denver","Metro average"],"xaxis":"x4","y":[91.61,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Detroit","visible":false,"x":["Detroit","Metro average"],"xaxis":"x","y":[61322,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Detroit","visible":false,"x":["Detroit","Metro average"],"xaxis":"x2","y":[1619.75,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Detroit","visible":false,"x":["Detroit","Metro average"],"xaxis":"x3","y":[230000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Detroit","visible":false,"x":["Detroit","Metro average"],"xaxis":"x4","y":[104.05,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Houston","visible":false,"x":["Houston","Metro average"],"xaxis":"x","y":[68344,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Houston","visible":false,"x":["Houston","Metro average"],"xaxis":"x2","y":[1578.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Houston","visible":false,"x":["Houston","Metro average"],"xaxis":"x3","y":[325000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Houston","visible":false,"x":["Houston","Metro average"],"xaxis":"x4","y":[100.26,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Indianapolis","visible":false,"x":["Indianapolis","Metro average"],"xaxis":"x","y":[68719,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Indianapolis","visible":false,"x":["Indianapolis","Metro average"],"xaxis":"x2","y":[1563.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Indianapolis","visible":false,"x":["Indianapolis","Metro average"],"xaxis":"x3","y":[250000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Indianapolis","visible":false,"x":["Indianapolis","Metro average"],"xaxis":"x4","y":[105.23,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Kansas City","visible":false,"x":["Kansas City","Metro average"],"xaxis":"x","y":[63417,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Kansas City","visible":false,"x":["Kansas City","Metro average"],"xaxis":"x2","y":[1686.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Kansas City","visible":false,"x":["Kansas City","Metro average"],"xaxis":"x3","y":[279000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Kansas City","visible":false,"x":["Kansas City","Metro average"],"xaxis":"x4","y":[106.77,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Las Vegas","visible":false,"x":["Las Vegas","Metro average"],"xaxis":"x","y":[59150,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Las Vegas","visible":false,"x":["Las Vegas","Metro average"],"xaxis":"x2","y":[1666.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Las Vegas","visible":false,"x":["Las Vegas","Metro average"],"xaxis":"x3","y":[415000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Las Vegas","visible":false,"x":["Las Vegas","Metro average"],"xaxis":"x4","y":[104.66,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Los Angeles","visible":false,"x":["Los Angeles","Metro average"],"xaxis":"x","y":[76445,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Los Angeles","visible":false,"x":["Los Angeles","Metro average"],"xaxis":"x2","y":[3587.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Los Angeles","visible":false,"x":["Los Angeles","Metro average"],"xaxis":"x3","y":[920000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Los Angeles","visible":false,"x":["Los Angeles","Metro average"],"xaxis":"x4","y":[87.86,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Miami","visible":false,"x":["Miami","Metro average"],"xaxis":"x","y":[77732,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Miami","visible":false,"x":["Miami","Metro average"],"xaxis":"x2","y":[3056.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Miami","visible":false,"x":["Miami","Metro average"],"xaxis":"x3","y":[465000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Miami","visible":false,"x":["Miami","Metro average"],"xaxis":"x4","y":[90.97,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Minneapolis-St. Paul","visible":false,"x":["Minneapolis-St. Paul","Metro average"],"xaxis":"x","y":[75164,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Minneapolis-St. Paul","visible":false,"x":["Minneapolis-St. Paul","Metro average"],"xaxis":"x2","y":[1896.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Minneapolis-St. Paul","visible":false,"x":["Minneapolis-St. Paul","Metro average"],"xaxis":"x3","y":[335000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Minneapolis-St. Paul","visible":false,"x":["Minneapolis-St. Paul","Metro average"],"xaxis":"x4","y":[96.54,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Nashville","visible":false,"x":["Nashville","Metro average"],"xaxis":"x","y":[74035,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Nashville","visible":false,"x":["Nashville","Metro average"],"xaxis":"x2","y":[1903.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Nashville","visible":false,"x":["Nashville","Metro average"],"xaxis":"x3","y":[419900.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Nashville","visible":false,"x":["Nashville","Metro average"],"xaxis":"x4","y":[104.68,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"New York","visible":false,"x":["New York","Metro average"],"xaxis":"x","y":[84084,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"New York","visible":false,"x":["New York","Metro average"],"xaxis":"x2","y":[4120.75,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"New York","visible":false,"x":["New York","Metro average"],"xaxis":"x3","y":[565000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"New York","visible":false,"x":["New York","Metro average"],"xaxis":"x4","y":[87.28,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Orlando","visible":false,"x":["Orlando","Metro average"],"xaxis":"x","y":[53959,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Orlando","visible":false,"x":["Orlando","Metro average"],"xaxis":"x2","y":[2246.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Orlando","visible":false,"x":["Orlando","Metro average"],"xaxis":"x3","y":[380000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Orlando","visible":false,"x":["Orlando","Metro average"],"xaxis":"x4","y":[100.19,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Philadelphia","visible":false,"x":["Philadelphia","Metro average"],"xaxis":"x","y":[73291,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Philadelphia","visible":false,"x":["Philadelphia","Metro average"],"xaxis":"x2","y":[2340.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Philadelphia","visible":false,"x":["Philadelphia","Metro average"],"xaxis":"x3","y":[301250.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Philadelphia","visible":false,"x":["Philadelphia","Metro average"],"xaxis":"x4","y":[100.8,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Phoenix","visible":false,"x":["Phoenix","Metro average"],"xaxis":"x","y":[61840,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Phoenix","visible":false,"x":["Phoenix","Metro average"],"xaxis":"x2","y":[2182.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Phoenix","visible":false,"x":["Phoenix","Metro average"],"xaxis":"x3","y":[449000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Phoenix","visible":false,"x":["Phoenix","Metro average"],"xaxis":"x4","y":[100.83,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Pittsburgh","visible":false,"x":["Pittsburgh","Metro average"],"xaxis":"x","y":[65792,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Pittsburgh","visible":false,"x":["Pittsburgh","Metro average"],"xaxis":"x2","y":[1800.75,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Pittsburgh","visible":false,"x":["Pittsburgh","Metro average"],"xaxis":"x3","y":[192500.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Pittsburgh","visible":false,"x":["Pittsburgh","Metro average"],"xaxis":"x4","y":[105.09,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Portland","visible":false,"x":["Portland","Metro average"],"xaxis":"x","y":[69435,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Portland","visible":false,"x":["Portland","Metro average"],"xaxis":"x2","y":[2333.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Portland","visible":false,"x":["Portland","Metro average"],"xaxis":"x3","y":[515000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Portland","visible":false,"x":["Portland","Metro average"],"xaxis":"x4","y":[94.9,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Sacramento","visible":false,"x":["Sacramento","Metro average"],"xaxis":"x","y":[66940,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Sacramento","visible":false,"x":["Sacramento","Metro average"],"xaxis":"x2","y":[2614.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Sacramento","visible":false,"x":["Sacramento","Metro average"],"xaxis":"x3","y":[542000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Sacramento","visible":false,"x":["Sacramento","Metro average"],"xaxis":"x4","y":[94.08,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"San Antonio","visible":false,"x":["San Antonio","Metro average"],"xaxis":"x","y":[55180,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"San Antonio","visible":false,"x":["San Antonio","Metro average"],"xaxis":"x2","y":[1463.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"San Antonio","visible":false,"x":["San Antonio","Metro average"],"xaxis":"x3","y":[297000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"San Antonio","visible":false,"x":["San Antonio","Metro average"],"xaxis":"x4","y":[103.76,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"San Diego","visible":false,"x":["San Diego","Metro average"],"xaxis":"x","y":[74326,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"San Diego","visible":false,"x":["San Diego","Metro average"],"xaxis":"x2","y":[3400.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"San Diego","visible":false,"x":["San Diego","Metro average"],"xaxis":"x3","y":[860000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"San Diego","visible":false,"x":["San Diego","Metro average"],"xaxis":"x4","y":[86.84,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"San Francisco","visible":false,"x":["San Francisco","Metro average"],"xaxis":"x","y":[123736,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"San Francisco","visible":false,"x":["San Francisco","Metro average"],"xaxis":"x2","y":[3788.75,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"San Francisco","visible":false,"x":["San Francisco","Metro average"],"xaxis":"x3","y":[1065000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"San Francisco","visible":false,"x":["San Francisco","Metro average"],"xaxis":"x4","y":[83.45,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Seattle","visible":false,"x":["Seattle","Metro average"],"xaxis":"x","y":[92113,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Seattle","visible":false,"x":["Seattle","Metro average"],"xaxis":"x2","y":[2946.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Seattle","visible":false,"x":["Seattle","Metro average"],"xaxis":"x3","y":[665000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Seattle","visible":false,"x":["Seattle","Metro average"],"xaxis":"x4","y":[87.28,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"St. Louis","visible":false,"x":["St. Louis","Metro average"],"xaxis":"x","y":[69698,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"St. Louis","visible":false,"x":["St. Louis","Metro average"],"xaxis":"x2","y":[1680.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"St. Louis","visible":false,"x":["St. Louis","Metro average"],"xaxis":"x3","y":[218000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"St. Louis","visible":false,"x":["St. Louis","Metro average"],"xaxis":"x4","y":[103.9,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Tampa","visible":false,"x":["Tampa","Metro average"],"xaxis":"x","y":[60091,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Tampa","visible":false,"x":["Tampa","Metro average"],"xaxis":"x2","y":[2207.5,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Tampa","visible":false,"x":["Tampa","Metro average"],"xaxis":"x3","y":[365000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Tampa","visible":false,"x":["Tampa","Metro average"],"xaxis":"x4","y":[101.04,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Virginia Beach","visible":false,"x":["Virginia Beach","Metro average"],"xaxis":"x","y":[57873,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Virginia Beach","visible":false,"x":["Virginia Beach","Metro average"],"xaxis":"x2","y":[1826.0,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Virginia Beach","visible":false,"x":["Virginia Beach","Metro average"],"xaxis":"x3","y":[309750.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Virginia Beach","visible":false,"x":["Virginia Beach","Metro average"],"xaxis":"x4","y":[102.26,97.88882352941178],"yaxis":"y4","type":"bar"},{"name":"Washington, DC","visible":false,"x":["Washington, DC","Metro average"],"xaxis":"x","y":[83010,71810.20588235294],"yaxis":"y","type":"bar"},{"name":"Washington, DC","visible":false,"x":["Washington, DC","Metro average"],"xaxis":"x2","y":[2657.25,2305.6176470588234],"yaxis":"y2","type":"bar"},{"name":"Washington, DC","visible":false,"x":["Washington, DC","Metro average"],"xaxis":"x3","y":[515000.0,430269.1176470588],"yaxis":"y3","type":"bar"},{"name":"Washington, DC","visible":false,"x":["Washington, DC","Metro average"],"xaxis":"x4","y":[89.82,97.88882352941178],"yaxis":"y4","type":"bar"}],                        {"annotations":[{"font":{"size":16},"showarrow":false,"text":"Median Personal Income (USD)","x":0.10625,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Median Rent (USD)","x":0.36875,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Median Home Sale Price (USD)","x":0.6312500000000001,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Purchasing Power (per $100)","x":0.89375,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"height":400,"showlegend":false,"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"updatemenus":[{"buttons":[{"args":[{"visible":[true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Atlanta","method":"update"},{"args":[{"visible":[false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Austin","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Baltimore","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Boston","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Charlotte","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Chicago","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Cincinnati","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Cleveland","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Dallas-Fort Worth","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Denver","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Detroit","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Houston","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Indianapolis","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Kansas City","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Las Vegas","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Los Angeles","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Miami","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Minneapolis-St. Paul","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Nashville","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"New York","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Orlando","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Philadelphia","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Phoenix","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Pittsburgh","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Portland","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Sacramento","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"San Antonio","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"San Diego","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"San Francisco","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"Seattle","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false,false]}],"label":"St. Louis","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false,false,false]}],"label":"Tampa","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false]}],"label":"Virginia Beach","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true,true,true]}],"label":"Washington, DC","method":"update"}],"direction":"down","pad":{"r":10,"t":10},"showactive":true,"x":0,"xanchor":"left","y":1.6,"yanchor":"top"}],"width":1200,"xaxis":{"anchor":"y","domain":[0.0,0.2125]},"yaxis":{"anchor":"x","domain":[0.0,1.0]},"xaxis2":{"anchor":"y2","domain":[0.2625,0.475]},"yaxis2":{"anchor":"x2","domain":[0.0,1.0]},"xaxis3":{"anchor":"y3","domain":[0.525,0.7375]},"yaxis3":{"anchor":"x3","domain":[0.0,1.0]},"xaxis4":{"anchor":"y4","domain":[0.7875,1.0]},"yaxis4":{"anchor":"x4","domain":[0.0,1.0]}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('1fccd3f0-dcc4-491b-a977-5c134cd1df8a');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<hr>
+</section>
+<section id="multiple-trace-radar-chart" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-trace-radar-chart">Multiple Trace Radar Chart<br></h2>
+<p>The following dropdown menu lets you view a radar chart comparing each region’s values to the averages of all regions. The chart again uses the normalized data from the first plot, where higher is always better. The further away from the center a point is, the better the value is. The larger the area, the better the region is overall. This chart is an intuitive way to compare what region you want to investigate to the average of all the regions without overwhelming your visual cortex.</p>
+<div>
+<blockquote class="blockquote">
+<p><strong>How to use this viz</strong><br> Select a metropolitan area from the dropdown menu to see a radar chart comparing the selected area’s values to the averages of all regions.<br> You can also rotate the chart at your convenience.</p>
+</blockquote>
+</div>
+<div id="8fb2ab94" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div>                            <div id="29833916-b852-4dd8-9b7b-53ba1dcde485" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("29833916-b852-4dd8-9b7b-53ba1dcde485")) {                    Plotly.newPlot(                        "29833916-b852-4dd8-9b7b-53ba1dcde485",                        [{"fill":"toself","name":"Atlanta","r":[0.7554322265073841,0.20090293453724603,0.3020689655172414,0.7419354838709677,0.7478559176672386,0.39684912640586245,0.2948639984065873],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":true,"type":"scatterpolar"},{"fill":"toself","name":"Austin","r":[0.8214655253503903,0.3072799097065463,0.31034482758620696,0.5161290322580644,0.707975986277873,0.737979815572779,0.6311037561739447],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Baltimore","r":[0.8049101683755056,0.16534988713318285,0.23724137931034484,0.8064516129032259,0.5051457975986278,0.19201170167816528,0.2627245239361533],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Boston","r":[0.06819678299313325,0.47516930022573367,0.6455172413793103,0.6451612903225806,0.33104631217838776,0.8757051486738852,0.8642992903804061],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Charlotte","r":[0.8267331389333082,0.20993227990970656,0.33379310344827595,0.5483870967741934,0.8606346483704979,0.7018297579997486,0.49854325628306806],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Chicago","r":[0.6634371178628539,0.1252821670428894,0.5296551724137932,0.0,0.489279588336192,0.6138962266280912,0.6153751618309837],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Cincinnati","r":[0.9311447653090019,0.07674943566591422,0.1724137931034483,0.3870967741935484,0.966981132075472,0.3533903580494193,0.23692267922185506],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Cleveland","r":[0.9968958705672091,0.0,0.2689655172413793,0.22580645161290336,0.9734133790737571,0.26607126154282845,0.26528203617809787],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Dallas-Fort Worth","r":[0.7302229329319913,0.22686230248306996,0.15724137931034476,0.35483870967741915,0.5506003430531736,0.6777103673385134,0.6320530233523963],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Denver","r":[0.5432226507384065,0.4255079006772009,0.2924137931034483,0.35483870967741915,0.3499142367066894,0.6172377201724932,0.5299284023706252],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Detroit","r":[0.941021540776973,0.05756207674943567,0.16137931034482766,0.4193548387096774,0.8833619210977703,0.23569302124557745,0.3448340159722677],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Houston","r":[0.9567303169974603,0.16478555304740408,0.263448275862069,0.22580645161290336,0.7208404802744433,0.4735228566544425,0.43217295308967396],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Indianapolis","r":[0.9621860596369108,0.08013544018058691,0.12275862068965515,0.5161290322580644,0.933962264150944,0.3891549827280909,0.37211061505308907],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Kansas City","r":[0.916000376258113,0.11286681715575622,0.22896551724137937,0.5483870967741934,1.0,0.302985734144839,0.3441580868876114],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Las Vegas","r":[0.9236196030476906,0.2663656884875847,0.0,0.03225806451612889,0.9095197255574616,0.7451337081224743,0.6832689540897947],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Los Angeles","r":[0.2007337033204778,0.8363431151241536,0.43448275862068964,0.16129032258064513,0.1891080617495713,0.7830883657322742,0.7696056515299516],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Miami","r":[0.40043269683002547,0.32279909706546284,0.36827586206896556,0.9032258064516129,0.3224699828473412,0.5543492634845069,0.4563771472402388],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Minneapolis-St. Paul","r":[0.8368921079860784,0.1760722347629797,0.3710344827586207,0.6451612903225806,0.5613207547169816,0.39029192913195354,0.32348186115696176],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Nashville","r":[0.8342583011946194,0.2718961625282167,0.2206896551724138,1.0,0.9103773584905666,0.5195780558055225,0.4979542020964396],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"New York","r":[0.0,0.43566591422121903,1.0,0.19354838709677413,0.16423670668953694,1.0,1.0],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Orlando","r":[0.7052017684131313,0.22686230248306996,0.0675862068965517,0.6774193548387096,0.717838765008576,0.31962385619966405,0.15117291706837488],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Philadelphia","r":[0.6699275703132348,0.13797968397291197,0.3806896551724138,0.4838709677419356,0.7439965694682673,0.6694340425943666,0.6578209656674641],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Phoenix","r":[0.7293763521775938,0.3047404063205418,0.0841379310344828,0.6451612903225806,0.7452830188679247,0.6039701200808927,0.5291550038881814],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Pittsburgh","r":[0.872918822312106,0.015237020316027083,0.4096551724137931,0.5483870967741934,0.9279588336192113,0.7052422099012712,0.6470272893124805],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Portland","r":[0.6726554416329602,0.3792325056433409,0.5655172413793104,0.16129032258064513,0.49099485420240185,0.3142036053296178,0.10403798763833749],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Sacramento","r":[0.5668328473332706,0.40970654627539504,0.1779310344827586,0.03225806451612889,0.4558319039451115,0.7312403843362651,0.6847013304572798],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"San Antonio","r":[1.0,0.13318284424379231,0.026206896551724146,0.3870967741935484,0.8709262435677534,0.4229053576785007,0.28036860383563256],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"San Diego","r":[0.2710939704637382,0.7686230248306998,0.13103448275862073,0.19354838709677413,0.14536878216123528,0.9623952961059989,0.9164348236969295],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"San Francisco","r":[0.12491769353776683,1.0,0.5337931034482759,0.29032258064516114,0.0,0.20495837647278936,0.0],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Seattle","r":[0.44200921832377016,0.5485327313769752,0.5779310344827587,0.19354838709677413,0.16423670668953694,0.36709983518308875,0.19268852382597035],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"St. Louis","r":[0.91816386040824,0.044018058690744905,0.2206896551724138,0.4193548387096774,0.8769296740994861,0.0,0.026863413590200613],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Tampa","r":[0.7198758348226884,0.20993227990970656,0.10896551724137932,0.6451612903225806,0.7542881646655237,0.9627871797600963,0.9374733813193542],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Virginia Beach","r":[0.8634183049572006,0.1475733634311512,0.09655172413793106,0.7419354838709677,0.8066037735849063,0.9845326908376635,0.8970151056377571],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Washington, DC","r":[0.5506537484714514,0.3792325056433409,0.6220689655172412,0.7419354838709677,0.27315608919382495,0.49724875097164567,0.42628029232343734],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"visible":false,"type":"scatterpolar"},{"fill":"toself","name":"Average","r":[0.6829582740819025,0.2835994555835879,0.3065720081135903,0.452561669829222,0.6191605287054791,0.546238856075392,0.485473507456222],"theta":["Median Rent","Median Sale Price","Walkability","Unemployment","Purchasing Power","Violent Crime Rate","Non-Violent Crime Rate"],"type":"scatterpolar"}],                        {"polar":{"radialaxis":{"range":[0,1],"visible":true}},"showlegend":true,"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"updatemenus":[{"buttons":[{"args":[{"visible":[true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Atlanta","method":"update"},{"args":[{"visible":[false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Austin","method":"update"},{"args":[{"visible":[false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Baltimore","method":"update"},{"args":[{"visible":[false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Boston","method":"update"},{"args":[{"visible":[false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Charlotte","method":"update"},{"args":[{"visible":[false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Chicago","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Cincinnati","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Cleveland","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Dallas-Fort Worth","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Denver","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Detroit","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Houston","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Indianapolis","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Kansas City","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Las Vegas","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Los Angeles","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Miami","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Minneapolis-St. Paul","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Nashville","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"New York","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Orlando","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Philadelphia","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Phoenix","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,true]}],"label":"Pittsburgh","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,true]}],"label":"Portland","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,true]}],"label":"Sacramento","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,true]}],"label":"San Antonio","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,true]}],"label":"San Diego","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,true]}],"label":"San Francisco","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,true]}],"label":"Seattle","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true]}],"label":"St. Louis","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,true]}],"label":"Tampa","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,true]}],"label":"Virginia Beach","method":"update"},{"args":[{"visible":[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,true]}],"label":"Washington, DC","method":"update"}],"direction":"down","pad":{"r":10,"t":10},"showactive":true,"x":0,"xanchor":"left","y":1.5,"yanchor":"top"}]},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('29833916-b852-4dd8-9b7b-53ba1dcde485');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<hr>
+</section>
+<section id="a-closer-look-at-crime" class="level2">
+<h2 class="anchored" data-anchor-id="a-closer-look-at-crime">A closer look at crime</h2>
+<div>
+<p>For some people, money cannot buy happiness. They worry less about material needs and more about feeling safe and secure. Below are plots showing the violent and non-violent crime rates for each region. The crime rates used in these plots and everywhere else on the page are self-reported by law enforcement agencies with jurisdiction over the area. Ask yourself if you trust the people who originate the data before looking too closely at it.</p>
+<blockquote class="blockquote">
+<p><strong>How to use this viz</strong><br> All values for violent and non-violent crime per 100,000 people are shown in the chart below. You can hover over each point to see the actual value for each metropolitan area. They are sorted from highest to lowest value for each crime type.</p>
+</blockquote>
+</div>
+<div id="45029ee9" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div>                            <div id="ac153b79-cf40-4e51-a0b6-3a0d8e67f52b" class="plotly-graph-div" style="height:900px; width:1400px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ac153b79-cf40-4e51-a0b6-3a0d8e67f52b")) {                    Plotly.newPlot(                        "ac153b79-cf40-4e51-a0b6-3a0d8e67f52b",                        [{"marker":{"size":10},"mode":"markers","name":"Violent Crime Rate","x":[1987.49,2083.4,2218.24,2220.67,2758.22,3332.52,3567.87,3612.23,3654.02,3815.23,3836.39,3985.95,4037.27,4360.93,4381.65,4443.2,4750.89,4966.5,5104.96,5252.08,5565.95,5727.52,5768.18,5775.23,5911.99,5997.0,6206.38,6239.99,6309.55,6538.45,6726.82,6917.4,6997.68,8188.31],"xaxis":"x","y":["New York","Virginia Beach","Tampa","San Diego","Boston","Los Angeles","Las Vegas","Austin","Sacramento","Pittsburgh","Charlotte","Dallas-Fort Worth","Philadelphia","Denver","Chicago","Phoenix","Miami","Nashville","Washington, DC","Houston","San Antonio","Atlanta","Minneapolis-St. Paul","Indianapolis","Seattle","Cincinnati","Orlando","Portland","Kansas City","Cleveland","Detroit","San Francisco","Baltimore","St. Louis"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,1987.49],"xaxis":"x","y":["New York","New York"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2083.4],"xaxis":"x","y":["Virginia Beach","Virginia Beach"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2218.24],"xaxis":"x","y":["Tampa","Tampa"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2220.67],"xaxis":"x","y":["San Diego","San Diego"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2758.22],"xaxis":"x","y":["Boston","Boston"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3332.52],"xaxis":"x","y":["Los Angeles","Los Angeles"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3567.87],"xaxis":"x","y":["Las Vegas","Las Vegas"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3612.23],"xaxis":"x","y":["Austin","Austin"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3654.02],"xaxis":"x","y":["Sacramento","Sacramento"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3815.23],"xaxis":"x","y":["Pittsburgh","Pittsburgh"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3836.39],"xaxis":"x","y":["Charlotte","Charlotte"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3985.95],"xaxis":"x","y":["Dallas-Fort Worth","Dallas-Fort Worth"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4037.27],"xaxis":"x","y":["Philadelphia","Philadelphia"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4360.93],"xaxis":"x","y":["Denver","Denver"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4381.65],"xaxis":"x","y":["Chicago","Chicago"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4443.2],"xaxis":"x","y":["Phoenix","Phoenix"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4750.89],"xaxis":"x","y":["Miami","Miami"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4966.5],"xaxis":"x","y":["Nashville","Nashville"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5104.96],"xaxis":"x","y":["Washington, DC","Washington, DC"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5252.08],"xaxis":"x","y":["Houston","Houston"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5565.95],"xaxis":"x","y":["San Antonio","San Antonio"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5727.52],"xaxis":"x","y":["Atlanta","Atlanta"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5768.18],"xaxis":"x","y":["Minneapolis-St. Paul","Minneapolis-St. Paul"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5775.23],"xaxis":"x","y":["Indianapolis","Indianapolis"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5911.99],"xaxis":"x","y":["Seattle","Seattle"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5997.0],"xaxis":"x","y":["Cincinnati","Cincinnati"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6206.38],"xaxis":"x","y":["Orlando","Orlando"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6239.99],"xaxis":"x","y":["Portland","Portland"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6309.55],"xaxis":"x","y":["Kansas City","Kansas City"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6538.45],"xaxis":"x","y":["Cleveland","Cleveland"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6726.82],"xaxis":"x","y":["Detroit","Detroit"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6917.4],"xaxis":"x","y":["San Francisco","San Francisco"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6997.68],"xaxis":"x","y":["Baltimore","Baltimore"],"yaxis":"y","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,8188.31],"xaxis":"x","y":["St. Louis","St. Louis"],"yaxis":"y","type":"scatter"},{"marker":{"size":10},"mode":"markers","name":"Non-Violent Crime Rate","x":[1448.59,1743.68,1842.97,1934.62,2089.02,2535.92,2936.62,2943.38,3063.48,3114.42,3185.09,3189.57,3263.8,3667.06,3670.71,3815.18,3817.96,4014.18,4128.41,4156.22,4411.87,4540.6,4543.79,4641.37,4776.43,4844.84,4916.04,4928.11,5049.88,5258.64,5454.57,5677.02,6041.24,6168.02],"xaxis":"x2","y":["New York","Tampa","San Diego","Virginia Beach","Boston","Los Angeles","Sacramento","Las Vegas","Philadelphia","Pittsburgh","Dallas-Fort Worth","Austin","Chicago","Denver","Phoenix","Charlotte","Nashville","Miami","Houston","Washington, DC","Indianapolis","Detroit","Kansas City","Minneapolis-St. Paul","Atlanta","San Antonio","Cleveland","Baltimore","Cincinnati","Seattle","Orlando","Portland","St. Louis","San Francisco"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,1448.59],"xaxis":"x2","y":["New York","New York"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,1743.68],"xaxis":"x2","y":["Tampa","Tampa"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,1842.97],"xaxis":"x2","y":["San Diego","San Diego"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,1934.62],"xaxis":"x2","y":["Virginia Beach","Virginia Beach"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2089.02],"xaxis":"x2","y":["Boston","Boston"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2535.92],"xaxis":"x2","y":["Los Angeles","Los Angeles"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2936.62],"xaxis":"x2","y":["Sacramento","Sacramento"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,2943.38],"xaxis":"x2","y":["Las Vegas","Las Vegas"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3063.48],"xaxis":"x2","y":["Philadelphia","Philadelphia"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3114.42],"xaxis":"x2","y":["Pittsburgh","Pittsburgh"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3185.09],"xaxis":"x2","y":["Dallas-Fort Worth","Dallas-Fort Worth"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3189.57],"xaxis":"x2","y":["Austin","Austin"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3263.8],"xaxis":"x2","y":["Chicago","Chicago"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3667.06],"xaxis":"x2","y":["Denver","Denver"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3670.71],"xaxis":"x2","y":["Phoenix","Phoenix"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3815.18],"xaxis":"x2","y":["Charlotte","Charlotte"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,3817.96],"xaxis":"x2","y":["Nashville","Nashville"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4014.18],"xaxis":"x2","y":["Miami","Miami"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4128.41],"xaxis":"x2","y":["Houston","Houston"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4156.22],"xaxis":"x2","y":["Washington, DC","Washington, DC"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4411.87],"xaxis":"x2","y":["Indianapolis","Indianapolis"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4540.6],"xaxis":"x2","y":["Detroit","Detroit"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4543.79],"xaxis":"x2","y":["Kansas City","Kansas City"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4641.37],"xaxis":"x2","y":["Minneapolis-St. Paul","Minneapolis-St. Paul"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4776.43],"xaxis":"x2","y":["Atlanta","Atlanta"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4844.84],"xaxis":"x2","y":["San Antonio","San Antonio"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4916.04],"xaxis":"x2","y":["Cleveland","Cleveland"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,4928.11],"xaxis":"x2","y":["Baltimore","Baltimore"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5049.88],"xaxis":"x2","y":["Cincinnati","Cincinnati"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5258.64],"xaxis":"x2","y":["Seattle","Seattle"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5454.57],"xaxis":"x2","y":["Orlando","Orlando"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,5677.02],"xaxis":"x2","y":["Portland","Portland"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6041.24],"xaxis":"x2","y":["St. Louis","St. Louis"],"yaxis":"y2","type":"scatter"},{"mode":"lines","showlegend":false,"x":[0,6168.02],"xaxis":"x2","y":["San Francisco","San Francisco"],"yaxis":"y2","type":"scatter"}],                        {"annotations":[{"font":{"size":16},"showarrow":false,"text":"Violent Crime Rate (per 100k)","x":0.225,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Non-Violent Crime Rate (per 100k)","x":0.775,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"height":900,"showlegend":false,"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"text":"Crime Rates by Region"},"width":1400,"xaxis":{"anchor":"y","domain":[0.0,0.45]},"yaxis":{"anchor":"x","domain":[0.0,1.0]},"xaxis2":{"anchor":"y2","domain":[0.55,1.0]},"yaxis2":{"anchor":"x2","domain":[0.0,1.0]}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('ac153b79-cf40-4e51-a0b6-3a0d8e67f52b');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,18 @@
+project:
+  type: website
+
+website:
+  navbar:
+      - href: index.ipynb
+        text: About
+      - href: interactive_tool.ipynb
+        text: Interactive Tool
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
+    includes:
+      before_body:
+        - plotly.js
