@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  title: "Website"
+  navbar:
+    left:
+      - href: index.ipynb
+        text: Home
+      - about.qmd
+      - href: https://www.sciencebase.gov/catalog//file/get/61a6952fd34eb622f6978d9f?f=__disk__16%2F0e%2Feb%2F160eeb81e88e58e9f73ace68371fcf8b48e4b725
+        text: Dataset
+      - href: https://github.com/emdapkus/scholarship
+        text: Code
+
+format:
+  html:
+    link-external-icon: true
+    theme: sandstone
+    css: styles.css
+    toc: true
+    
+
+
+
