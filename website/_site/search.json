@@ -4,7 +4,7 @@
     "href": "future.html",
     "title": "Leave No Trace",
     "section": "",
-    "text": "leave no trace and how we are now effecting park even when we are not in them"
+    "text": "story about leave no trace\nleave no trace and how we are now effecting park even when we are not in them\n\n\nPredicted Data\n\n\nPrecipitation\n\n# annual rain fall\n\n\n\nsoil water\n\n# seasonal swa50\n\n\n\ntemperature\n\n# Mean Temperature\n\n\n# Max summer Temerature\n\n\n\nConclusion"
   },
   {
     "objectID": "index.html",
@@ -89,5 +89,26 @@
     "title": "The Park",
     "section": "Soil Composition",
     "text": "Soil Composition\nThe visualization below shows the mean percentage of solid composition at each site. The data collected only includes sand, clay, and rock fragments. Since more than these three categories make up the soil composition, the total does not add up to 100 percent."
+  },
+  {
+    "objectID": "index.html#mean-historical-temperature",
+    "href": "index.html#mean-historical-temperature",
+    "title": "The Park",
+    "section": "Mean Historical Temperature",
+    "text": "Mean Historical Temperature\nThis graph shows the annual mean temperature for the historical data. The mean temperature was calculated by finding the average yearly temperature of all the data collection sites."
+  },
+  {
+    "objectID": "index.html#minimum-winter-historical-temperature",
+    "href": "index.html#minimum-winter-historical-temperature",
+    "title": "The Park",
+    "section": "Minimum Winter Historical Temperature",
+    "text": "Minimum Winter Historical Temperature\nThis visualization shows the minimum temperature from all collection sites’ observations for the given year. It was calculated by finding the coldest collection site on its coldest day."
+  },
+  {
+    "objectID": "index.html#maximum-summer-historical-temperature",
+    "href": "index.html#maximum-summer-historical-temperature",
+    "title": "The Park",
+    "section": "Maximum Summer Historical Temperature",
+    "text": "Maximum Summer Historical Temperature\nThe plot below shows the maximum temperature from all collection sites’ observations for the given year. That is to say, it shows the data from the hottest observation site on the hottest day for each year."
   }
 ]
