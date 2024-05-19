@@ -1,16 +1,79 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "future.html",
+    "href": "future.html",
+    "title": "Leave No Trace",
     "section": "",
-    "text": "About this site"
+    "text": "leave no trace and how we are now effecting park even when we are not in them"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About",
+    "title": "The Park",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nMedian Sale Price - (2022)\n\n\n\n\nReferences\n\nSurvey, U. S. Geological. 2022. “Climate and Drought Adaptation: Historical and Projected Future Exposure Metrics for Southeastern Utah Group National Parks.” March 2, 2022. https://www.sciencebase.gov/catalog/item/61a6952fd34eb622f6978d9f."
+    "text": "Located in southeast Utah, Natural Bridges is the state’s First National Monument. Established in 1908, it gets its name from the park’s three extensive naturally occurring bridge-like features. The bridges, Sipapu, Owachomo, and Kachina, are named in honor of the Puebloans, an ancestral people who made the area their home between 7,000 Before Common Era (BCE) and 700 Common Era (CE). Natural Bridges is now maintained by the National Park Service (NPS). (2024)\nDespite being one of the lesser-known and visited National Monuments in Utah, Natural Bridges draws in 90,000 visitors annually (2014). While the three bridges are the main attraction, the park offers a diverse range of activities. Visitors can immerse themselves in the park’s natural beauty, explore its historical sites and artifacts, hike its trails, and camp under the starry skies. It is a national treasure that offers something for everyone, making it a must-visit and a cause worth conserving. (2024)"
+  },
+  {
+    "objectID": "future.html#explain-scenarios",
+    "href": "future.html#explain-scenarios",
+    "title": "Leave No Trace",
+    "section": "",
+    "text": "# Litter"
+  },
+  {
+    "objectID": "index.html#max-summer-temp",
+    "href": "index.html#max-summer-temp",
+    "title": "The Park",
+    "section": "Max summer temp",
+    "text": "Max summer temp"
+  },
+  {
+    "objectID": "index.html#tmin_winter",
+    "href": "index.html#tmin_winter",
+    "title": "The Park",
+    "section": "Tmin_winter",
+    "text": "Tmin_winter"
+  },
+  {
+    "objectID": "index.html#mean-annual",
+    "href": "index.html#mean-annual",
+    "title": "The Park",
+    "section": "Mean Annual",
+    "text": "Mean Annual"
+  },
+  {
+    "objectID": "index.html#elevation",
+    "href": "index.html#elevation",
+    "title": "The Park",
+    "section": "Elevation",
+    "text": "Elevation"
+  },
+  {
+    "objectID": "index.html#ground-coverage",
+    "href": "index.html#ground-coverage",
+    "title": "The Park",
+    "section": "Ground Coverage",
+    "text": "Ground Coverage\nThe U.S. Geological Survey collects the percentage of ground around each site that is covered by tree canopy, annual herbaceous plants, plant litter, scrubs, or bare ground. This visual shows the mean of each coverage from all the collection sites."
+  },
+  {
+    "objectID": "index.html#soil",
+    "href": "index.html#soil",
+    "title": "The Park",
+    "section": "Soil",
+    "text": "Soil\nSa - Sand\nCl - Clay\nRF - Rock Fragment"
+  },
+  {
+    "objectID": "index.html#slope",
+    "href": "index.html#slope",
+    "title": "The Park",
+    "section": "Slope",
+    "text": "Slope"
+  },
+  {
+    "objectID": "index.html#day-top-50-dry",
+    "href": "index.html#day-top-50-dry",
+    "title": "The Park",
+    "section": "Day top 50 dry",
+    "text": "Day top 50 dry\nDrySoilDays_Winter_top50\nDrySoilDays_Spring_top50"
   }
 ]
