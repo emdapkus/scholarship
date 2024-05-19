@@ -60,7 +60,7 @@
     "href": "index.html#soil",
     "title": "The Park",
     "section": "Soil",
-    "text": "Soil\nSa - Sand\nCl - Clay\nRF - Rock Fragment"
+    "text": "Soil"
   },
   {
     "objectID": "index.html#slope",
@@ -75,5 +75,19 @@
     "title": "The Park",
     "section": "Day top 50 dry",
     "text": "Day top 50 dry\nDrySoilDays_Winter_top50\nDrySoilDays_Spring_top50"
+  },
+  {
+    "objectID": "index.html#soil-competition",
+    "href": "index.html#soil-competition",
+    "title": "The Park",
+    "section": "Soil Competition",
+    "text": "Soil Competition"
+  },
+  {
+    "objectID": "index.html#soil-composition",
+    "href": "index.html#soil-composition",
+    "title": "The Park",
+    "section": "Soil Composition",
+    "text": "Soil Composition\nThe visualization below shows the mean percentage of solid composition at each site. The data collected only includes sand, clay, and rock fragments. Since more than these three categories make up the soil composition, the total does not add up to 100 percent."
   }
 ]
