@@ -4,7 +4,7 @@
     "href": "future.html",
     "title": "Leave No Trace",
     "section": "",
-    "text": "story about leave no trace\nleave no trace and how we are now effecting park even when we are not in them\n\n\nPredicted Data\n\n\nPrecipitation\n\n# annual rain fall\n\n\n\nsoil water\n\n# seasonal swa50\n\n\n\ntemperature\n\n# Mean Temperature\n\n\n# Max summer Temerature\n\n\n\nConclusion"
+    "text": "Many hikers, campers, and other outdoor enthusiasts know the saying, “Leave No Trace”. The National Park Service publishes websites and physical cards explaining the principles of Leave No Trace (2022). The seven principles are:       - Plan Ahead and Prepare       - Travel and Camp on Durable Surfaces       - Dispose of Waste Properly       - Leave What You Find       - Minimize Campfire Impacts       - Respect Wildlife       - Be Considerate of Other Visitors       (2022)\nYou can find more information about the principles here. While everyone exploring national parks and nature should know them all, the idea is to leave things the way you found them and ensure others can enjoy natural spaces as you did after you left.\nUnfortunately, we live in a world where people affect change in areas beyond where they live and visit. Industry changes have impacted the climate and conditions on the other side of the world. We can no longer ensure that future generations will be able to enjoy the outdoors like we have without making some changes."
   },
   {
     "objectID": "index.html",
@@ -14,41 +14,6 @@
     "text": "Located in southeast Utah, Natural Bridges is the state’s First National Monument. Established in 1908, it gets its name from the park’s three extensive naturally occurring bridge-like features. The bridges, Sipapu, Owachomo, and Kachina, are named in honor of the Puebloans, an ancestral people who made the area their home between 7,000 Before Common Era (BCE) and 700 Common Era (CE). Natural Bridges is now maintained by the National Park Service (NPS). (2024)\nDespite being one of the lesser-known and visited National Monuments in Utah, Natural Bridges draws in 90,000 visitors annually (2014). While the three bridges are the main attraction, the park offers a diverse range of activities. Visitors can immerse themselves in the park’s natural beauty, explore its historical sites and artifacts, hike its trails, and camp under the starry skies. It is a national treasure that offers something for everyone, making it a must-visit and a cause worth conserving. (2024)"
   },
   {
-    "objectID": "future.html#explain-scenarios",
-    "href": "future.html#explain-scenarios",
-    "title": "Leave No Trace",
-    "section": "",
-    "text": "# Litter"
-  },
-  {
-    "objectID": "index.html#max-summer-temp",
-    "href": "index.html#max-summer-temp",
-    "title": "The Park",
-    "section": "Max summer temp",
-    "text": "Max summer temp"
-  },
-  {
-    "objectID": "index.html#tmin_winter",
-    "href": "index.html#tmin_winter",
-    "title": "The Park",
-    "section": "Tmin_winter",
-    "text": "Tmin_winter"
-  },
-  {
-    "objectID": "index.html#mean-annual",
-    "href": "index.html#mean-annual",
-    "title": "The Park",
-    "section": "Mean Annual",
-    "text": "Mean Annual"
-  },
-  {
-    "objectID": "index.html#elevation",
-    "href": "index.html#elevation",
-    "title": "The Park",
-    "section": "Elevation",
-    "text": "Elevation\nThe total difference in elevation between the lowest and highest points in the park is 263.86 meters. The following graphic looks at the elevation at the different collection sites. The visual shows the elevation of each site on the z-axis, longitude on the x-axis, and latitude on the y-axis. The visual provides a rudimentary look at the geometry of the national monument."
-  },
-  {
     "objectID": "index.html#ground-coverage",
     "href": "index.html#ground-coverage",
     "title": "The Park",
@@ -56,39 +21,18 @@
     "text": "Ground Coverage\nThe U.S. Geological Survey collects the percentage of ground around each site that is covered by tree canopy, annual herbaceous plants, plant litter, scrubs, or bare ground. This visual shows the mean of each coverage from all the collection sites."
   },
   {
-    "objectID": "index.html#soil",
-    "href": "index.html#soil",
-    "title": "The Park",
-    "section": "Soil",
-    "text": "Soil"
-  },
-  {
-    "objectID": "index.html#slope",
-    "href": "index.html#slope",
-    "title": "The Park",
-    "section": "Slope",
-    "text": "Slope"
-  },
-  {
-    "objectID": "index.html#day-top-50-dry",
-    "href": "index.html#day-top-50-dry",
-    "title": "The Park",
-    "section": "Day top 50 dry",
-    "text": "Day top 50 dry\nDrySoilDays_Winter_top50\nDrySoilDays_Spring_top50"
-  },
-  {
-    "objectID": "index.html#soil-competition",
-    "href": "index.html#soil-competition",
-    "title": "The Park",
-    "section": "Soil Competition",
-    "text": "Soil Competition"
-  },
-  {
     "objectID": "index.html#soil-composition",
     "href": "index.html#soil-composition",
     "title": "The Park",
     "section": "Soil Composition",
     "text": "Soil Composition\nThe visualization below shows the mean percentage of solid composition at each site. The data collected only includes sand, clay, and rock fragments. Since more than these three categories make up the soil composition, the total does not add up to 100 percent."
+  },
+  {
+    "objectID": "index.html#elevation",
+    "href": "index.html#elevation",
+    "title": "The Park",
+    "section": "Elevation",
+    "text": "Elevation\nThe total difference in elevation between the lowest and highest points in the park is 263.86 meters. The following graphic looks at the elevation at the different collection sites. The visual shows the elevation of each site on the z-axis, longitude on the x-axis, and latitude on the y-axis. The visual provides a rudimentary look at the geometry of the national monument."
   },
   {
     "objectID": "index.html#mean-historical-temperature",
@@ -110,5 +54,19 @@
     "title": "The Park",
     "section": "Maximum Summer Historical Temperature",
     "text": "Maximum Summer Historical Temperature\nThe plot below shows the maximum temperature from all collection sites’ observations for the given year. That is to say, it shows the data from the hottest observation site on the hottest day for each year."
+  },
+  {
+    "objectID": "future.html#precipitation",
+    "href": "future.html#precipitation",
+    "title": "Leave No Trace",
+    "section": "Precipitation",
+    "text": "Precipitation\n\n# annual rain fall"
+  },
+  {
+    "objectID": "future.html#soil-water",
+    "href": "future.html#soil-water",
+    "title": "Leave No Trace",
+    "section": "Soil Water",
+    "text": "Soil Water\n\n# seasonal swa50"
   }
 ]
