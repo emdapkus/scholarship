@@ -18,13 +18,12 @@ NA
 # List all DSAN seminars and events that you have attended over the past year
 You can list other Georgetown events you attended as well. Please note that all DSAN events and seminars have attendance sheets. Please do not list events/seminars that you did not attend as this can disqualify you. Briefly describe each event that you attended.
 
-Georgetown Data Science Conference "The Evolution of Data Science"
-DSAN Career Journey Panel
-DSAN Donuts
+Georgetown Data Science Conference "The Evolution of Data Science" - 
+DSAN Career Journey Panel - Panelist from Blue Bonnet, GAO, Marymount, and Choice Hotels spoke about their careers and the paths that brought them to were they were then. The most talked about monment amongst the students that attended is how excited Prof. James became when one of the panelist mentioned they always look for linux skills when hiring. 
 Spring Speaker Series: Prabal Saxena of NASA
-Public Sector Career Event
-Private Sector Career Panel
-Alumni/Student Mixer
+Public Sector Career Event - Members of GAO, the Library of Congress, and others talked about what it takes to get hired as an employee and data scientist in the federal government. 
+Private Sector Career Panel - 
+Alumni/Student Mixer - 
 Generative AI and AI Literacy Seminar
 
 # Describe any volunteer work you have performed for the DSAN program (and or Georgetown community) over the past year.
@@ -32,3 +31,8 @@ I participated in an interview with Georgetown’s Main Campus MarTech team abou
 
 # Describe any TA or RA experience you've had at Georgetown over the past year.
 I was a Graduate Teaching Assistant for Dr. Zahadat in Principles of Cyber Security in the spring.
+
+
+
+# site
+https://dapkus.georgetown.domains/mini_project/
