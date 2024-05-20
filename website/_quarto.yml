@@ -10,7 +10,7 @@ website:
       - href: https://www.sciencebase.gov/catalog//file/get/61a6952fd34eb622f6978d9f?f=__disk__16%2F0e%2Feb%2F160eeb81e88e58e9f73ace68371fcf8b48e4b725
         icon: download
         text: Dataset
-      - href: https://github.com/emdapkus/scholarship
+      - href: https://github.com/emdapkus/scholarship/
         icon: github
         text: Code
 
