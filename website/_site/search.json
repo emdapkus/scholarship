@@ -60,7 +60,7 @@
     "href": "future.html#precipitation",
     "title": "Leave No Trace",
     "section": "Precipitation",
-    "text": "Precipitation\n\n# annual rain fall"
+    "text": "Precipitation\nThe three plots below show the average annual precipitation among all observation sites for the historical data, predicted near-term data and predicted long-term data. Averaging the twenty models together reduces the variance in the predicted data, leading to a higher mean annual precipitation and lower variance than the historical data. Based on these charts and a look at the basic statistics during EDA. The future will have little impact on the amount of precipitation."
   },
   {
     "objectID": "future.html#soil-water",
@@ -68,5 +68,12 @@
     "title": "Leave No Trace",
     "section": "Soil Water",
     "text": "Soil Water\n\n# seasonal swa50"
+  },
+  {
+    "objectID": "future.html#soil-water-availability",
+    "href": "future.html#soil-water-availability",
+    "title": "Leave No Trace",
+    "section": "Soil Water Availability",
+    "text": "Soil Water Availability\n\n# seasonal swa50"
   }
 ]
